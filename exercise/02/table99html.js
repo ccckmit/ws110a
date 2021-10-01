@@ -11,4 +11,35 @@ function table99() {
   return table.join('\n')+"</table>"
 }
 
-console.log(table99())
+console.log(`
+<html>
+<head>
+<style>
+table {
+  width: 500px;
+  border-collapse:collapse;
+  border:1px solid black;
+  padding: 10px;
+}
+
+th {
+  text-align:left;
+  background-color:black;
+  color:white;
+  padding: 10px;
+}
+
+td {
+  border:1px solid black;
+  padding: 10px;
+}
+
+</style>
+</head>
+<body>
+${table99()}
+</body>
+</html>
+`)
+
+
